@@ -1,5 +1,16 @@
 # SuperHeroesAPP
 
+## Imagenes about APP
+![image](https://user-images.githubusercontent.com/57459718/134946411-6daa293e-8d3d-47ca-9f1b-a5f72690e9c5.png)
+
+## Filter
+
+![image](https://user-images.githubusercontent.com/57459718/134946560-46ab481a-0281-45a8-85c4-e80dc9fadda4.png)
+
+## Information about Hero
+![image](https://user-images.githubusercontent.com/57459718/134946716-23ad4834-9d43-453d-a6a2-210ebd9b1064.png)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4.
 
 ## Development server
