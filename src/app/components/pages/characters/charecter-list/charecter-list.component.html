@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let character of characters">
+        <div class="card" *ngIf="character.image.url">
+            <div class="image">
+                <a [routerLink]="['/character-details', character.id]">
+                    <div>
+                        <img 
+                            [src]="character.image.url"
+                            [alt]="character.name"
+                            class="card-img-top"
+                        />
+                    </div>
+                </a>
+            </div>
+            <div class="card-inner">
+                <div class="header">
+                    <a class="text-decoration-none text-dark" [routerLink]="['/character-details', character.id]">
+                        <h2>{{character.id}} - {{ character.name }}</h2>
+                    </a>
+                    <div *ngIf="character.biography.alignment == 'good'">
+                        <h4 class="text-success">{{character.biography.alignment}}</h4>
+                    </div>
+                    <div *ngIf="character.biography.alignment == 'bad'">
+                        <h4 class="text-danger">{{character.biography.alignment}}</h4>
+                    </div>
+                    <small class="text-muted">{{character.biography.publisher}}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 mt-5 container-notFound"
+    *ngIf="characters.length < 0">
+        <p>No results.......</p>
+    </div>
+</div>
+
+<button
+class="btn btn-dark"
+>Go Up</button>
